@@ -18,6 +18,10 @@ body{
     border-bottom-left-radius: 64px;
     background-color: rgba(11,31,51,1);
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 #video{
     width: 1536;
     height: 864;
@@ -160,7 +164,7 @@ body{
     height: 171px;
     opacity: 1;
     top: 570px;
-    left: -20px;
+    left:-20px;
     right:20px;
     border-radius:64px;
 
@@ -237,39 +241,92 @@ body{
     border-width: 1px;
 }
 .left{
-    position: relative;
+    display: grid;
     gap:20px;
     justify-content: space-between;
 }
-div.star {
+.star {
+    margin-left: 80px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
     align-self: center;
     width: 1228px;
     border-radius: 16px;
     padding: 64px 52px;
     gap: 30px;
 }
+.star p{
+    color: black;
+    margin: 0;
+}
 /* Icons */
 .star img {
     width: 64px;
-    height: 64px;
-    display: block;
+    height: 64p;
+}
+.testimonial{
+    display: grid;
+    justify-content: center;
+    gap: 12px;
+}
+.testimonial p,.image2,h1{
+    text-align: center;
+}
+.testimonial p:first-child{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1FA6A0;
 }
 
-/* Numbers */
-.star h2 {
+/* ---------- Heading Content ---------- */
+.campprogram {
+    text-align: center;
+    padding: 30px;
+}
+
+.campprogram p:first-child {
+    font-family: 'Arial Rounded MT Bold';
+    font-size: 16px;
+    font-weight: 400;
+    color: #1FA6A0;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.campprogram h1 {
     font-size: 36px;
     font-weight: 700;
-    color: #22c7c7;
-    line-height: 1.1;
-    margin-bottom: 6px;
+    color: #1f2933;
+    margin: 5px;
 }
 
-/* Labels */
-.star p {
+.campprogram p:last-child {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* ---------- Camp Cards Layout ---------- */
+#camppics {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+}
+#camppics p{
+    display: flex;
+    justify-content: center;
     font-size: 18px;
-    font-weight: 400;
-    color: #1a1a1a;
+    font-weight: 500;
 }
-.div-right a{
-    text-decoration: none;
+
+/* ---------- Image Styling ---------- */
+.Wintercamp img,
+.Summercamp img {
+    width: 580px;
+    height: 700px;
+    display: block;
+    border-radius: 18.67px;
 }
+
