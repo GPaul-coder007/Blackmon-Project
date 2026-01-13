@@ -59,6 +59,7 @@ body{
     line-height: 150%;
     font-family: "Poppins";
     border: none;
+    z-index: 2;
 }
 #explore:hover{
     box-shadow: 0 0 12px  #F26B5B,
@@ -96,6 +97,7 @@ a{
 .navbar {
     position: sticky;
     top: 58px;
+    z-index: 3;
     left: 32px;
     width: 1375.62px;
     padding: 16px 20px;
@@ -146,11 +148,9 @@ a{
     cursor: pointer;
     transition: background 0.25s ease;
 }
-
 .dropdown-toggle:hover {
     background: rgba(255,255,255,0.12);
 }
-
 .dropdown-toggle::after {
     content: "▾";
     font-size: 12px;
@@ -163,46 +163,38 @@ a{
     top: 52px;
     left: 50%;
     transform: translateX(-50%) rotateY(90deg);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
     border-radius: 14px;
     padding: 12px 0;
     min-width: 240px;
-
     box-shadow: 0 18px 40px rgba(0,0,0,0.45);
-
-    opacity: 0;
-    visibility: hidden;
     transition: all 0.45s ease-in-out;
     z-index: 1000;
 }
 
 /* ACTIVE STATE */
 .dropdown-menu.active {
-    opacity: 1;
+    opacity: 100;
     visibility: visible;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
     transform: translateX(-50%) rotateY(0deg);
 }
 
 /* DROPDOWN LINKS */
 .dropdown-menu a {
-    width: 100%;
+    width: 75%;
     padding: 10px 22px;
     font-size: 14.5px;
     color: #ffffff;
     text-decoration: none;
-    transition: background 0.25s ease;
 }
 
 .dropdown-menu a:hover {
+    font-weight: bold;
     border-radius: 50px;
     background: rgba(255,255,255,0.08);
 }
@@ -218,20 +210,8 @@ a{
     left:-20px;
     right:20px;
     border-radius: 70px;
+    z-index: 0;
 
-}
-.dropdown-menu a {
-    display: block;
-    align-content: center;
-    padding: 10px 22px;
-    font-size: 14.5px;
-    color: #ffffff;
-    transition: background 0.25s ease;
-    white-space: nowrap;
-}
-
-.dropdown-menu a:hover {
-    background: rgba(255,255,255,0.08);
 }
 
 /* ===== QUOTE + LOGIN ===== */
@@ -321,10 +301,12 @@ a{
     gap: 12px;
 }
 .testimonial p,.image2,h1{
+    font: Arial Rounded MT Bold;
+    font-size: 18px;
     text-align: center;
 }
 .testimonial p:first-child{
-    font-weight: 400;
+    font-weight:400;
     font-size: 16px;
     line-height: 28px;
     color: #1FA6A0;
@@ -379,4 +361,196 @@ a{
     display: block;
     border-radius: 18.67px;
 }
-
+/*------------ Tutoring Plans Styling -----*/
+#Tutoringplans{
+    background-color: rgba(11, 31, 51, 1);
+    color: white;
+}
+#Tutoringplans{
+    display: grid;
+    justify-content: center;
+    width: 1440px;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    gap: 36px;
+}
+#Tutoringplans p:first-child{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #1FA6A0;
+    font-family: "Poppins";
+}
+#Tutoringplans h2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Poppins";
+    line-height: 28px;
+}
+#Tutoringplans p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+p#text1{
+    font-weight: 500;
+    font-family: "Poppins";
+}
+.H-scrollgroups{
+    display: flex;
+    gap: 28px;
+}
+/*------------ Card1 Styling---------*/
+.card1 {
+    width: 400px;
+    height: 498px;
+    padding-bottom: 32px;
+    gap: 24px;
+    border-radius: 22px;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    border-color: #102F4D;
+    border: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Heading */
+.card1 h2 {
+    background-color: #102F4D;
+    padding: 24px 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+/* Bullet points */
+.card1 p:first-child{
+    text-align: center;
+}
+.card1 p {
+    font-family: "Poppins";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #e6f0fa;
+    text-align: left;
+}
+/* Button */
+.card1 button {
+    padding: 18px 78px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2dd4bf;
+    background: transparent;
+    border: 2px solid #2dd4bf;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Button hover */
+.card1 button:hover {
+    background-color: #2dd4bf;
+    color: #06202e;
+    box-shadow: 0 8px 24px rgba(45, 212, 191, 0.35);
+}
+/*---------- Card2 styling ---------*/
+.card2 {
+    width: 400px;
+    height: 498px;
+    padding-bottom: 32px;
+    border-radius: 22px;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    border-color: #102F4D;
+    border: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Heading */
+.card2 h2 {
+    background-color: #102F4D;
+    padding: 24px 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+/* Bullet points */
+.card2 p {
+    font-family: "Poppins";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #e6f0fa;
+    text-align: left;
+}
+/* Button */
+.card2 button {
+    padding: 16px 78px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2dd4bf;
+    background: transparent;
+    border: 2px solid #2dd4bf;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Button hover */
+.card2 button:hover {
+    background-color: #2dd4bf;
+    color: #06202e;
+    box-shadow: 0 8px 24px rgba(45, 212, 191, 0.35);
+}
+/*---------- Card3 Stylling ---------*/
+.card3 {
+    width: 400px;
+    height: 498px;
+    padding-bottom: 32px;
+    border-radius: 22px;
+    box-shadow:
+        0 18px 36px rgba(0, 0, 0, 0.45),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    border-color: #102F4D;
+    border: 2px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Heading */
+.card3 h2{
+    background-color: #102F4D;
+    padding: 24px 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+/* Bullet points */
+.card3 p {
+    font-family: "Poppins";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #e6f0fa;
+    text-align: left;
+}
+/* Button */
+.card3 button {
+    padding: 18px 78px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2dd4bf;
+    background: transparent;
+    border: 2px solid #2dd4bf;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Button hover */
+.card3 button:hover {
+    background-color: #2dd4bf;
+    color: #06202e;
+    box-shadow: 0 8px 24px rgba(45, 212, 191, 0.35);
+    
+}
