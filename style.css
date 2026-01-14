@@ -259,16 +259,72 @@ a {
   width: 1440px;
   height: 695px;
   display: grid;
-  align-items: center;
   opacity: 1;
   border-top-left-radius: 120px;
   border-top-right-radius: 120px;
   border-width: 1px;
 }
+.footercard1{
+    padding-top: 70px;
+    display: flex;
+    gap: 250px;
+}
 .left {
-  display: grid;
-  gap: 20px;
-  justify-content: space-between;
+    width: 554px;
+    height: 298.56px;
+    gap: 30px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+}
+.socialmedia1{
+    display: flex;
+    gap: 38px;
+}
+.socialmedia1 p{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.socialmedia2 p{
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+}
+.footercard2{
+    display: flex;
+    gap: 420px;
+    width: 1277px;
+    height: 52px;
+}
+.footercard2 p4{
+    display: flex;
+    gap: 24px;
+}
+.right{
+    width: 472px;
+    height: 238px;
+    gap: 38px  ;
+    display: grid;
+    text-align: left;
+}
+.right th{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Poppins";
+}
+.right td{
+    font-family: "Poppins";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+#footer hr{
+    width: 1227px;
+    height: 0px;
+    border: 0.5px solid;
 }
 .star {
   margin-left: 80px;
@@ -764,4 +820,127 @@ p#text1 {
   color: #ffffff;
   box-shadow: 0 10px 28px rgba(31, 166, 160, 0.35);
   transform: translateY(-2px);
+}
+/*-------- Testimonial Styling -----------*/
+.testimonial1{
+    text-align: center;
+    gap: 12px;
+    padding: 20px;
+
+}
+.testimonial1 p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1ecad3;
+}
+.testimonial1 h3{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+}
+.TestCard{
+    display: flex;
+    gap: 38px;
+}
+/*-------------- Card 1 Styling ------*/
+.review1{
+    width: 450px;
+    height: 450px;
+    border-radius: 24px;
+    border: 2px solid;
+}
+.review1 blockquote{
+    background-color: rgba(60, 76, 92, 0.3 );
+    padding: 50px 24px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 3%;
+}
+.review1 p1 {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 20px;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 18px;
+}
+.review1 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    letter-spacing: 1%;
+    text-align: center;
+    padding-top: 15px;
+}
+/*--------- Card 2 Styling ------------*/
+.review2{
+    width: 450px;
+    height: 450px;
+    border-radius: 24px;
+    border: 2px solid;
+}
+.review2 blockquote{
+    background-color: rgba(60, 76, 92, 0.3 );
+    padding: 30px 24px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+}
+.review2 p1 {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 20px;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 18px;
+}
+.review2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    text-align: center;
+    padding-top: 15px;
+}
+/*----------- Card 3 Styling ---------*/
+.review3{
+    width: 450px;
+    height: 450px;
+    border-radius: 24px;
+    border: 2px solid;
+}
+.review3 blockquote{
+    background-color: rgba(60, 76, 92, 0.3 );
+    padding: 30px 24px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 3%;
+}
+.review3 p1 {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 20px;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 18px;
+}
+.review3 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    letter-spacing: 1%;
+    text-align: center;
+    padding-top: 15px;
 }
