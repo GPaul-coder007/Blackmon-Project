@@ -822,7 +822,7 @@ p#text1 {
   transform: translateY(-2px);
 }
 /*-------- Testimonial Styling -----------*/
-#familyreview{
+#familyreview {
   padding: 20px 20px;
   width: 1440px;
   height: 621.17px;
@@ -966,6 +966,7 @@ p#text1 {
 
 /* ================= LETTER IMAGE ================= */
 .letterimage {
+  filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.25));
   width: 392.73px;
   height: 369.25px;
   padding-left: 50px;
