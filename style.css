@@ -131,7 +131,9 @@ a {
 /* NAV ITEM */
 .nav-item {
   position: relative;
+  perspective: 800px;
 }
+
 
 /* DROPDOWN TOGGLE */
 .dropdown-toggle {
@@ -1017,7 +1019,7 @@ p#text1 {
 }
 
 /* Email field (fake input) */
-.contents button:nth-of-type(1) {
+.contents input:nth-of-type(1) {
   width: 381px;
   height: 52px;
   font-size: 13.5px;
@@ -1030,26 +1032,22 @@ p#text1 {
   margin-right: 12px;
 }
 
-/* CTA button */
-.contents button:nth-of-type(2) {
-  border-radius: 8px;
-  border: none;
-  width: 210px;
-  height: 52px;
-  align-self: center;
-  background-color: rgba(31, 166, 160, 1);
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1%;
-}
-
 /* Button row alignment */
 .contents button:nth-of-type(1),
 .contents button:nth-of-type(2) {
   display: inline-flex;
+  color: white;
+  text-align: center;
   align-items: center;
-  padding-left: 25px;
+  width: 210px;
+  height: 52px;
+  border: none;
+  padding: 14px 24px;
+  background-color: rgba(31, 166, 160, 1);
+  border-radius: 8px;
+}
+.contents button:hover {
+  background-color: rgba(31, 166, 160, 0.8);
 }
 .contents p6 {
   display: flex;
