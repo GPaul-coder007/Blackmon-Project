@@ -93,7 +93,7 @@ a {
 .navbar {
   position: sticky;
   top: 58px;
-  z-index: 3;
+  z-index: 9;
   left: 32px;
   width: 1375.62px;
   padding: 16px 20px;
@@ -822,10 +822,15 @@ p#text1 {
   transform: translateY(-2px);
 }
 /*-------- Testimonial Styling -----------*/
+#familyreview{
+  padding: 20px 20px;
+  width: 1440px;
+  height: 621.17px;
+  gap: 38px;
+}
 .testimonial1 {
   text-align: center;
   gap: 12px;
-  padding: 20px;
 }
 .testimonial1 p {
   font-family: "Poppins";
